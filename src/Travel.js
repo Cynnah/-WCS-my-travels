@@ -8,11 +8,9 @@ const Travel = (props) => (
     />
     <figcaption>
     <br />
-      <destination>{props.destination}</destination>
-      <br />
-      <country>{props.country}</country>
-      <br />
-      <distance>{props.distance}</distance>
+      <p>{props.destination}</p>
+      <p>{props.country}</p>
+      <p>{props.distance}</p>
     </figcaption>
   </figure>
 );

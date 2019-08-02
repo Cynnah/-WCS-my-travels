@@ -1,8 +1,9 @@
 import React from "react";
 import Travel from "./Travel";
 
-const voyages = [
+const travels = [
   {
+    id: 1,
     destination: "Salamanca",
     country: "Spain",
     image:
@@ -10,6 +11,7 @@ const voyages = [
     distance: "1403.90 km"
   },
   {
+    id: 2,
     destination: "Roma",
     country: "Italy",
     image:
@@ -17,6 +19,7 @@ const voyages = [
     distance: "1427.50 km"
   },
   {
+    id: 3,
     destination: "London",
     country: "England",
     image:
@@ -24,6 +27,7 @@ const voyages = [
     distance: "443.20 km"
   },
   {
+    id: 4,
     destination: "Berlin",
     country: "Germany",
     image:
@@ -31,6 +35,7 @@ const voyages = [
     distance: "927.60 km"
   },
   {
+    id: 5,
     destination: "Versailles",
     country: "France",
     image:
@@ -41,8 +46,10 @@ const voyages = [
 
 const Travels = () => (
   <div>
-    {voyages.map(voyage => (
-        <Travel {...voyage}/>
+    {travels.map((voyage, index) => (
+        <ul key={index}>
+            <Travel {...voyage}/>
+        </ul>
     ))}
   </div>
 );
